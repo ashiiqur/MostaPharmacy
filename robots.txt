@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mostapharmacy.ashiqur.in/sitemap.xml
