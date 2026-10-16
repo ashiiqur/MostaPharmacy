@@ -24,8 +24,9 @@ body{background:var(--mint);color:var(--ink);font:400 1.05rem/1.6 "Public Sans",
 .tab::after{content:"";position:absolute;left:12%;right:12%;top:calc(50% - 1px);height:2px;border-radius:2px;background:rgba(0,0,0,.18)}
 
 /* Pills drifting up behind the page */
-.float{position:fixed;inset:0;overflow:hidden;pointer-events:none}
-.fp{position:absolute;bottom:-100px;left:var(--x);width:var(--s);opacity:.5}
+/* Sized to the large viewport so the layer keeps one height while the mobile address bar shows and hides (no jump) */
+.float{position:fixed;top:0;left:0;right:0;height:100vh;height:100lvh;overflow:hidden;pointer-events:none;contain:layout paint}
+.fp{position:absolute;bottom:-100px;left:var(--x);width:var(--s);opacity:.5;will-change:transform;backface-visibility:hidden}
 .fp i{display:block;width:100%}
 .fp .cap,.fp .tab,.fp .mk{opacity:0}
 .fp .mk img{display:block;width:100%;height:auto}
