@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Primary SEO -->
+<title>MostaPharmacy | Website Under Construction</title>
+<meta name="description" content="MostaPharmacy, run by Pharmacist Mostafizur Rahman, is building its new website. Find the pharmacy on Google Maps and check back soon.">
+<meta name="keywords" content="MostaPharmacy, pharmacy, medicine shop, pharmacist, Mostafizur Rahman">
+<meta name="author" content="Mostafizur Rahman">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://mostapharmacy.ashiqur.in/">
+<meta name="theme-color" content="#E6F3EE">
+<!-- Google Search Console: paste your verification tag below when you have it
+<meta name="google-site-verification" content="YOUR_CODE">
+-->
+
+<!-- Favicon: place favicon.svg and favicon.png in the site root -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+
+<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MostaPharmacy">
+<meta property="og:title" content="MostaPharmacy | Website Under Construction">
+<meta property="og:description" content="MostaPharmacy, run by Pharmacist Mostafizur Rahman, is building its new website. Check back soon.">
+<meta property="og:url" content="https://mostapharmacy.ashiqur.in/">
+<meta property="og:image" content="https://mostapharmacy.ashiqur.in/favicon.png">
+<meta property="og:image:alt" content="MostaPharmacy logo">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MostaPharmacy | Website Under Construction">
+<meta name="twitter:description" content="MostaPharmacy, run by Pharmacist Mostafizur Rahman, is building its new website. Check back soon.">
+<meta name="twitter:image" content="https://mostapharmacy.ashiqur.in/favicon.png">
+
+<!-- Structured data. When ready, add "address", "telephone" and "openingHours" to the Pharmacy object. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mostapharmacy.ashiqur.in/#website",
+      "url": "https://mostapharmacy.ashiqur.in/",
+      "name": "MostaPharmacy",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://mostapharmacy.ashiqur.in/#pharmacy" }
+    },
+    {
+      "@type": "Pharmacy",
+      "@id": "https://mostapharmacy.ashiqur.in/#pharmacy",
+      "name": "MostaPharmacy",
+      "url": "https://mostapharmacy.ashiqur.in/",
+      "logo": "https://mostapharmacy.ashiqur.in/favicon.png",
+      "image": "https://mostapharmacy.ashiqur.in/favicon.png",
+      "description": "MostaPharmacy is a pharmacy run by Pharmacist Mostafizur Rahman. Its website is under construction.",
+      "hasMap": "https://maps.app.goo.gl/R8ameXwf7JaMNvvA6",
+      "employee": { "@type": "Person", "name": "Mostafizur Rahman", "jobTitle": "Pharmacist" }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Public+Sans:wght@400;600&display=swap">
+
+<style>
+:root{--mint:#E6F3EE;--ink:#0B3A33;--muted:#34594F;--green:#0B7A57;--amber:#FFC233;--foil:#D3E1E5}
+*{box-sizing:border-box;margin:0}
+body{background:var(--mint);color:var(--ink);font:400 1.05rem/1.6 "Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+
+/* Pill shapes (used in the blister pack and in the background) */
+.cap{width:78%;aspect-ratio:2.2;border-radius:99px;background:linear-gradient(90deg,var(--c) 50%,#fff 50%);rotate:var(--r,0deg);box-shadow:inset 0 -5px 6px rgba(0,0,0,.16),inset 0 4px 5px rgba(255,255,255,.5),0 3px 4px rgba(11,58,51,.3)}
+.tab{position:relative;width:56%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.55),transparent 50%),var(--c);box-shadow:inset 0 -5px 7px rgba(0,0,0,.16),0 3px 4px rgba(11,58,51,.3)}
+.tab::after{content:"";position:absolute;left:12%;right:12%;top:calc(50% - 1px);height:2px;border-radius:2px;background:rgba(0,0,0,.18)}
+
+/* Pills drifting up behind the page */
+.float{position:fixed;inset:0;overflow:hidden;pointer-events:none}
+.fp{position:absolute;bottom:-100px;left:var(--x);opacity:.5;animation:rise var(--d) linear infinite;animation-delay:var(--t)}
+.fp.cap,.fp.tab{width:var(--s)}
+@keyframes rise{to{transform:translateY(-125vh) rotate(360deg)}}
+
+/* Layout */
+.page{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;padding:clamp(24px,5vw,56px)}
+main{flex:1;width:100%;max-width:1080px;margin:0 auto;display:grid;align-content:center;gap:clamp(28px,5vw,52px) clamp(32px,7vw,96px);grid-template-areas:"head" "art" "info"}
+.head{grid-area:head;container-type:inline-size}
+.info{grid-area:info}
+@media(min-width:880px){
+  main{grid-template-columns:1.15fr .85fr;grid-template-areas:"head art" "info art"}
+  .blister{align-self:center}
+}
+
+/* Text */
+.status{display:inline-flex;align-items:center;gap:.6em;padding:.4em 1em .4em .8em;border-radius:99px;background:var(--amber);font-weight:600;font-size:.95rem}
+.status::before{content:"";width:.6em;height:.6em;border-radius:50%;background:var(--ink)}
+h1{font:800 clamp(2.2rem,10vw,4.4rem)/.9 "Bricolage Grotesque","Public Sans",system-ui,sans-serif;font-size:clamp(2.2rem,11.5cqw,5rem);letter-spacing:-.035em;margin:.28em 0 .3em}
+.lead{max-width:30ch;font-size:1.2rem;color:var(--muted)}
+dl{max-width:30rem;border-bottom:1px solid rgba(11,58,51,.2)}
+dl div{display:grid;grid-template-columns:7rem 1fr;align-items:center;gap:1rem;padding:.9rem 0;border-top:1px solid rgba(11,58,51,.2)}
+dt{font-size:.9rem;color:var(--muted)}
+dd{font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.65em 1.2em;border-radius:99px;background:var(--green);color:#fff;font-weight:600;text-decoration:none;transition:background .2s}
+.btn:hover{background:#09654A}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+footer{width:100%;max-width:1080px;margin:clamp(28px,5vw,48px) auto 0;font-size:.85rem;color:var(--muted)}
+
+/* Blister pack: pills drop into the wells one by one */
+.blister{grid-area:art;justify-self:center;width:min(100%,430px);padding:clamp(14px,3.5vw,22px);display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2.6vw,16px);border-radius:26px;rotate:-3deg;background:linear-gradient(145deg,#F6FAFB,var(--foil) 45%,#C2D2D7);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(11,58,51,.12),0 26px 40px -18px rgba(11,58,51,.45)}
+.w{aspect-ratio:1;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:radial-gradient(circle at 34% 28%,#fff,#E8F1F3 38%,#BCCDD3);box-shadow:inset 0 3px 7px rgba(11,58,51,.28),0 1px 0 rgba(255,255,255,.9)}
+.w .cap,.w .tab{animation:fill 10s infinite backwards;animation-delay:calc(var(--i) * .7s)}
+@keyframes fill{
+  0%{translate:0 -160%;scale:.5;opacity:0;animation-timing-function:cubic-bezier(.3,1.4,.5,1)}
+  7%,90%{translate:0 0;scale:1;opacity:1}
+  100%{translate:0 0;scale:.4;opacity:0}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .float{display:none}
+  .w .cap,.w .tab{animation:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Background pills -->
+<div class="float" aria-hidden="true">
+  <span class="fp cap" style="--x:6%;--s:64px;--d:30s;--t:-4s;--c:#1FB58A"></span>
+  <span class="fp tab" style="--x:18%;--s:34px;--d:24s;--t:-15s;--c:#FFC233"></span>
+  <span class="fp cap" style="--x:33%;--s:46px;--d:36s;--t:-22s;--c:#4FA9EE"></span>
+  <span class="fp tab" style="--x:52%;--s:52px;--d:28s;--t:-9s;--c:#F0705A"></span>
+  <span class="fp cap" style="--x:68%;--s:58px;--d:32s;--t:-27s;--c:#FFC233"></span>
+  <span class="fp tab" style="--x:82%;--s:40px;--d:26s;--t:-2s;--c:#1FB58A"></span>
+  <span class="fp cap" style="--x:93%;--s:50px;--d:34s;--t:-18s;--c:#4FA9EE"></span>
+</div>
+
+<div class="page">
+  <main>
+    <header class="head">
+      <p class="status">Under construction</p>
+      <h1>MostaPharmacy</h1>
+      <p class="lead">Our website is under construction. We are getting it ready and will be online soon.</p>
+    </header>
+
+    <div class="blister" role="img" aria-label="A blister pack being filled with capsules and tablets">
+      <span class="w" style="--i:0;--c:#1FB58A;--r:-35deg"><span class="cap"></span></span>
+      <span class="w" style="--i:1;--c:#FFC233"><span class="tab"></span></span>
+      <span class="w" style="--i:2;--c:#4FA9EE;--r:25deg"><span class="cap"></span></span>
+      <span class="w" style="--i:3;--c:#1FB58A"><span class="tab"></span></span>
+      <span class="w" style="--i:4;--c:#4FA9EE"><span class="tab"></span></span>
+      <span class="w" style="--i:5;--c:#FFC233;--r:-20deg"><span class="cap"></span></span>
+      <span class="w" style="--i:6;--c:#F0705A;--r:40deg"><span class="cap"></span></span>
+      <span class="w" style="--i:7;--c:#1FB58A"><span class="tab"></span></span>
+    </div>
+
+    <section class="info" aria-label="About the pharmacy">
+      <dl>
+        <div><dt>Pharmacist</dt><dd>Mostafizur Rahman</dd></div>
+        <div>
+          <dt>Location</dt>
+          <dd>
+            <a class="btn" href="https://maps.app.goo.gl/R8ameXwf7JaMNvvA6" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              View on Google Maps
+            </a>
+          </dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>&copy; <span id="y">2026</span> MostaPharmacy. mostapharmacy.ashiqur.in</footer>
+</div>
+
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
